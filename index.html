@@ -1,11 +1,537 @@
-<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex,nofollow,noarchive"><meta name="theme-color" content="#070707"><title>ONLY ONE · PRIVATE ACCESS</title>
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<meta name="theme-color" content="#080807">
+
+<title>ONLY ONE · PRIVATE ACCESS</title>
+
 <style>
-:root{--bg:#070707;--paper:#f1eadf;--muted:#aaa197;--gold:#c9a15d;--line:rgba(201,161,93,.32)}*{box-sizing:border-box}html,body{margin:0;background:var(--bg);color:var(--paper);font-family:Arial,sans-serif}body{min-height:100svh;overflow:hidden}.screen{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;padding:28px;opacity:0;visibility:hidden;transform:translateY(18px);transition:.7s ease;background:#070707}.screen.active{opacity:1;visibility:visible;transform:none;z-index:2}.inner{width:min(920px,100%);text-align:center}.eyebrow{font-size:11px;letter-spacing:.36em;color:var(--gold);text-transform:uppercase;margin-bottom:30px}h1,h2{font-family:Georgia,serif;font-weight:400;margin:0;line-height:.98}h1{font-size:clamp(64px,12vw,150px);letter-spacing:.04em}h2{font-size:clamp(38px,7vw,82px)}.lead{margin:30px auto;color:#d7cfc5;letter-spacing:.12em;font-size:14px}.rule{width:72px;height:1px;background:var(--gold);margin:28px auto}button,a.btn{border:1px solid var(--gold);background:transparent;color:var(--paper);padding:18px 28px;min-width:260px;letter-spacing:.2em;text-transform:uppercase;font-size:11px;text-decoration:none;cursor:pointer}.top{position:absolute;top:24px;left:28px;right:28px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:.3em;color:#b99b69}.program{max-width:680px;margin:35px auto;text-align:left;border-top:1px solid var(--line)}.row{display:grid;grid-template-columns:48px 1fr;gap:16px;padding:18px 4px;border-bottom:1px solid rgba(255,255,255,.11)}.num{color:var(--gold);font-size:12px}.txt{font-size:16px;color:#ddd4c9}.conditions{display:grid;grid-template-columns:repeat(3,1fr);margin:46px auto;max-width:900px}.condition{padding:25px;border-right:1px solid var(--line)}.condition:last-child{border:0}.icon{font-family:Georgia,serif;font-size:42px;color:var(--gold);margin-bottom:16px}.label{font-size:9px;letter-spacing:.22em;color:var(--gold);margin-bottom:10px}.value{font-size:16px}#place{background:linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.16) 65%,rgba(0,0,0,.42)),url('spa.jpg') center/cover no-repeat}#place .inner{text-align:left;margin-right:auto;max-width:1100px}#place h2{max-width:620px;text-shadow:0 3px 30px #000}#place button{margin-top:36px;background:rgba(0,0,0,.28)}.final h2{max-width:800px;margin:auto}.final .btn{display:inline-block;margin-top:42px;background:var(--gold);color:#080808}.footer{margin-top:34px;font-size:9px;letter-spacing:.28em;color:#8e806e}
-@media(max-width:700px){.screen{padding:24px 20px}.top{top:18px;left:18px;right:18px}.conditions{grid-template-columns:1fr;margin:30px auto}.condition{border-right:0;border-bottom:1px solid var(--line);padding:18px}.condition:last-child{border-bottom:0}.program{margin:25px auto}.row{padding:14px 2px}#place{background-position:58% center}#place .inner{padding-top:35vh}h1{font-size:clamp(58px,19vw,92px)}h2{font-size:clamp(34px,11vw,58px)}}
-</style></head><body>
-<section class="screen active" id="intro"><div class="top"><span>PRIVATE ACCESS</span><span>CERTIFICATE №001</span></div><div class="inner"><div class="eyebrow">PRIVATE ACCESS</div><h1>ONLY ONE</h1><div class="rule"></div><div class="lead">ПЕРСОНАЛЬНЫЙ ДОСТУП АКТИВИРОВАН.</div><button onclick="go('program')">Открыть →</button></div></section>
-<section class="screen" id="program"><div class="top"><span>PRIVATE PROGRAM</span><span>02 / 05</span></div><div class="inner"><div class="eyebrow">PRIVATE PROGRAM</div><h2>ПРОГРАММА ВКЛЮЧАЕТ</h2><div class="program"><div class="row"><span class="num">01</span><span class="txt">Персональный формат</span></div><div class="row"><span class="num">02</span><span class="txt">Расслабляющую SPA-программу</span></div><div class="row"><span class="num">03</span><span class="txt">Киносеанс на выбор</span></div><div class="row"><span class="num">04</span><span class="txt">Чайную карту</span></div><div class="row"><span class="num">05</span><span class="txt">Полную конфиденциальность</span></div></div><button onclick="go('terms')">Продолжить →</button></div></section>
-<section class="screen" id="terms"><div class="top"><span>PRIVATE ACCESS</span><span>03 / 05</span></div><div class="inner"><div class="eyebrow">ACCESS CONDITIONS</div><h2>УСЛОВИЯ ДОСТУПА</h2><div class="conditions"><div class="condition"><div class="icon">∞</div><div class="label">Количество посещений</div><div class="value">Без ограничений</div></div><div class="condition"><div class="icon">⌛</div><div class="label">Срок действия</div><div class="value">Бессрочно</div></div><div class="condition"><div class="icon">◇</div><div class="label">Условия</div><div class="value">Исключительно по предварительной записи</div></div></div><button onclick="go('place')">Узнать место →</button></div></section>
-<section class="screen" id="place"><div class="top"><span>PRIVATE SPA</span><span>04 / 05</span></div><div class="inner"><div class="eyebrow">PRIVATE SPA</div><h2>ПРОСТРАНСТВО<br>ЗАРЕЗЕРВИРОВАНО<br>ДЛЯ ВАС</h2><button onclick="go('final')">Продолжить →</button></div></section>
-<section class="screen final" id="final"><div class="top"><span>PRIVATE SPA</span><span>05 / 05</span></div><div class="inner"><div class="eyebrow">PRIVATE SPA</div><h2>ВЫБОР МАССАЖИСТА<br>НЕ ПРЕДУСМОТРЕН.</h2><a class="btn" href="https://t.me/Arthandam">Забронировать сеанс →</a><div class="footer">PRIVATE ACCESS · ALBINA · CERTIFICATE №001</div></div></section>
-<script>function go(id){const c=document.querySelector('.screen.active'),n=document.getElementById(id);c.classList.remove('active');setTimeout(()=>n.classList.add('active'),220)}</script></body></html>
+:root{
+  --bg:#080807;
+  --paper:#f2eee6;
+  --muted:#aaa49a;
+  --gold:#c9a15d;
+  --line:rgba(201,161,93,.30);
+}
+
+*{box-sizing:border-box}
+
+html,body{
+  margin:0;
+  width:100%;
+  min-height:100%;
+  background:var(--bg);
+  color:var(--paper);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;
+}
+
+body{
+  overflow:hidden;
+}
+
+.screen{
+  display:none;
+  min-height:100svh;
+  padding:28px 32px;
+  position:relative;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  background:
+    radial-gradient(circle at 50% 40%,rgba(201,161,93,.06),transparent 40%),
+    #080807;
+  animation:fade .65s ease;
+}
+
+.screen.active{display:flex}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(8px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.top{
+  position:absolute;
+  top:24px;
+  left:30px;
+  right:30px;
+  display:flex;
+  justify-content:space-between;
+  font-size:10px;
+  letter-spacing:4px;
+  color:var(--muted);
+}
+
+.eyebrow{
+  color:var(--gold);
+  letter-spacing:5px;
+  font-size:10px;
+  margin-bottom:30px;
+}
+
+h1,h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-weight:400;
+  margin:0;
+}
+
+h1{
+  font-size:clamp(52px,8vw,108px);
+  line-height:.95;
+  max-width:1050px;
+}
+
+h2{
+  font-size:clamp(40px,6vw,72px);
+  line-height:1.05;
+}
+
+.name{
+  font-family:Georgia,"Times New Roman",serif;
+  font-style:italic;
+  font-size:clamp(55px,9vw,115px);
+  color:var(--paper);
+  margin:12px 0 28px;
+}
+
+.text{
+  max-width:650px;
+  color:#c9c4ba;
+  font-size:15px;
+  line-height:1.8;
+  letter-spacing:.5px;
+}
+
+.btn{
+  margin-top:38px;
+  padding:20px 32px;
+  min-width:270px;
+  border:1px solid var(--gold);
+  background:transparent;
+  color:var(--paper);
+  letter-spacing:3px;
+  font-size:11px;
+  cursor:pointer;
+  text-decoration:none;
+  display:inline-block;
+}
+
+.btn:hover{
+  background:var(--gold);
+  color:#080807;
+}
+
+.number{
+  color:var(--gold);
+  font-size:12px;
+  letter-spacing:3px;
+  margin-right:22px;
+}
+
+.program{
+  width:min(700px,90vw);
+  margin-top:35px;
+  text-align:left;
+}
+
+.row{
+  display:flex;
+  align-items:center;
+  padding:18px 4px;
+  border-bottom:1px solid rgba(242,238,230,.14);
+  font-size:17px;
+}
+
+.conditions{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  width:min(900px,92vw);
+  margin-top:50px;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.condition{
+  padding:36px 20px;
+  border-right:1px solid var(--line);
+}
+
+.condition:last-child{border-right:0}
+
+.icon{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-size:34px;
+  margin-bottom:18px;
+}
+
+.label{
+  color:var(--muted);
+  font-size:9px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  margin-bottom:12px;
+}
+
+.value{
+  font-family:Georgia,serif;
+  font-size:21px;
+}
+
+.photo{
+  width:min(960px,92vw);
+  height:min(58vh,600px);
+  position:relative;
+  overflow:hidden;
+  margin-top:25px;
+  border:1px solid rgba(201,161,93,.28);
+}
+
+.photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.60) saturate(.78);
+}
+
+.photo:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(90deg,rgba(8,8,7,.40),transparent 45%),
+    linear-gradient(0deg,rgba(8,8,7,.35),transparent 50%);
+}
+
+.photo-copy{
+  position:absolute;
+  z-index:2;
+  left:38px;
+  bottom:34px;
+  text-align:left;
+}
+
+.photo-copy small{
+  display:block;
+  color:var(--gold);
+  letter-spacing:4px;
+  font-size:9px;
+  margin-bottom:12px;
+}
+
+.photo-copy strong{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(30px,5vw,58px);
+  font-weight:400;
+}
+
+.final h2{
+  max-width:850px;
+}
+
+.footer{
+  position:absolute;
+  bottom:25px;
+  font-size:9px;
+  letter-spacing:4px;
+  color:#817d76;
+}
+
+.goldline{
+  width:42px;
+  height:1px;
+  background:var(--gold);
+  margin:28px auto;
+}
+
+@media(max-width:700px){
+
+  .screen{
+    padding:70px 20px 45px;
+  }
+
+  .top{
+    top:18px;
+    left:18px;
+    right:18px;
+    font-size:8px;
+    letter-spacing:2px;
+  }
+
+  h1{
+    font-size:48px;
+  }
+
+  h2{
+    font-size:38px;
+  }
+
+  .name{
+    font-size:58px;
+  }
+
+  .conditions{
+    grid-template-columns:1fr;
+    margin-top:28px;
+  }
+
+  .condition{
+    padding:18px 10px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .condition:last-child{
+    border-bottom:0;
+  }
+
+  .photo{
+    height:55vh;
+    width:100%;
+  }
+
+  .photo-copy{
+    left:22px;
+    right:20px;
+    bottom:24px;
+  }
+
+  .row{
+    font-size:14px;
+    padding:15px 0;
+  }
+
+  .btn{
+    min-width:240px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- 01. ИНТРИГА -->
+<section class="screen active" id="intro">
+
+  <div class="top">
+    <span>PRIVATE ACCESS</span>
+    <span>CERTIFICATE №001</span>
+  </div>
+
+  <div class="eyebrow">ONLY ONE</div>
+
+  <h1>Доступ<br>предоставлен.</h1>
+
+  <div class="goldline"></div>
+
+  <div class="text">
+    Некоторые вещи не выбирают из каталога.<br>
+    Они существуют только для одного человека.
+  </div>
+
+  <button class="btn" onclick="go('person')">
+    ОТКРЫТЬ →
+  </button>
+
+</section>
+
+
+<!-- 02. ПЕРСОНАЛИЗАЦИЯ -->
+<section class="screen" id="person">
+
+  <div class="top">
+    <span>PRIVATE ACCESS</span>
+    <span>02 / 05</span>
+  </div>
+
+  <div class="eyebrow">PERSONAL CERTIFICATE</div>
+
+  <h2>Этот доступ предназначен</h2>
+
+  <div class="name">Альбине</div>
+
+  <div class="text">
+    Сертификат персональный.<br>
+    Передача третьим лицам не предусмотрена.
+  </div>
+
+  <button class="btn" onclick="go('program')">
+    ОТКРЫТЬ ПРОГРАММУ ↓
+  </button>
+
+</section>
+
+
+<!-- 03. ПРОГРАММА -->
+<section class="screen" id="program">
+
+  <div class="top">
+    <span>PRIVATE PROGRAM</span>
+    <span>03 / 05</span>
+  </div>
+
+  <div class="eyebrow">PRIVATE PROGRAM</div>
+
+  <h2>Программа включает</h2>
+
+  <div class="program">
+
+    <div class="row">
+      <span class="number">01</span>
+      <span>Личного массажиста</span>
+    </div>
+
+    <div class="row">
+      <span class="number">02</span>
+      <span>Расслабляющую SPA-программу</span>
+    </div>
+
+    <div class="row">
+      <span class="number">03</span>
+      <span>Киносеанс на выбор</span>
+    </div>
+
+    <div class="row">
+      <span class="number">04</span>
+      <span>Чайную карту</span>
+    </div>
+
+    <div class="row">
+      <span class="number">05</span>
+      <span>Полную конфиденциальность</span>
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="go('terms')">
+    УСЛОВИЯ ДОСТУПА →
+  </button>
+
+</section>
+
+
+<!-- 04. УСЛОВИЯ + ПЕРВОЕ РАСКРЫТИЕ МЕСТА -->
+<section class="screen" id="terms">
+
+  <div class="top">
+    <span>PRIVATE ACCESS</span>
+    <span>04 / 05</span>
+  </div>
+
+  <div class="eyebrow">ACCESS CONDITIONS</div>
+
+  <h2>Условия доступа</h2>
+
+  <div class="conditions">
+
+    <div class="condition">
+      <div class="icon">∞</div>
+      <div class="label">Количество посещений</div>
+      <div class="value">Без ограничений</div>
+    </div>
+
+    <div class="condition">
+      <div class="icon">⌛</div>
+      <div class="label">Срок действия</div>
+      <div class="value">Бессрочно</div>
+    </div>
+
+    <div class="condition">
+      <div class="icon">◫</div>
+      <div class="label">Условия</div>
+      <div class="value">По предварительной записи</div>
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="go('place')">
+    ПРОДОЛЖИТЬ ↓
+  </button>
+
+</section>
+
+
+<!-- 05. ФОТО -->
+<section class="screen" id="place">
+
+  <div class="top">
+    <span>PRIVATE SPACE</span>
+    <span>05 / 05</span>
+  </div>
+
+  <div class="photo">
+
+    <img
+      src="6695A8A2-B86F-4D2E-9D76-DE3999AC78EB.jpeg"
+      alt="Private space"
+    >
+
+    <div class="photo-copy">
+      <small>PRIVATE SPACE</small>
+      <strong>Пространство<br>зарезервировано для вас.</strong>
+    </div>
+
+  </div>
+
+  <button class="btn" onclick="go('final')">
+    ПРОДОЛЖИТЬ →
+  </button>
+
+</section>
+
+
+<!-- ФИНАЛ -->
+<section class="screen final" id="final">
+
+  <div class="top">
+    <span>PRIVATE SPA</span>
+    <span>CERTIFICATE №001</span>
+  </div>
+
+  <div class="eyebrow">PRIVATE SPA</div>
+
+  <h2>
+    Выбор массажиста<br>
+    не предусмотрен.
+  </h2>
+
+  <div class="goldline"></div>
+
+  <div class="text">
+    Осталось выбрать время.
+  </div>
+
+  <a
+    class="btn"
+    href="https://t.me/Arthandam"
+    target="_blank"
+    rel="noopener"
+  >
+    ЗАБРОНИРОВАТЬ СЕАНС →
+  </a>
+
+  <div class="footer">
+    PRIVATE ACCESS · ALBINA · CERTIFICATE №001
+  </div>
+
+</section>
+
+
+<script>
+function go(id){
+  const current=document.querySelector('.screen.active');
+  const next=document.getElementById(id);
+
+  if(current) current.classList.remove('active');
+  if(next) next.classList.add('active');
+
+  window.scrollTo(0,0);
+}
+</script>
+
+</body>
+</html>
