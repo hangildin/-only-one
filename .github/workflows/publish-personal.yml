@@ -1,0 +1,39 @@
+name: Personal website preview
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'hangildin/**'
+      - '.github/workflows/publish-personal.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages-personal-preview
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build preview without modifying existing microsite
+        run: |
+          mkdir -p public/hangildin
+          cp index.html public/index.html
+          find . -maxdepth 1 -type f \( -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.png' -o -iname '*.webp' \) -exec cp '{}' public/ \;
+          cp hangildin/index.html public/hangildin/index.html
+          touch public/.nojekyll
+          test -s public/hangildin/index.html
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: public
+      - id: deployment
+        uses: actions/deploy-pages@v4
