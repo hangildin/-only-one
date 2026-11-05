@@ -152,8 +152,9 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-off
 footer{background:#0e1813;color:#98ada0;padding:24px 0}
 .foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:11px}
 .foot-inner a:hover{color:#fff}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
-.reveal.shown{opacity:1;transform:none}
+.reveal{opacity:1;transform:none}
+.has-js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.has-js .reveal.shown{opacity:1;transform:none}
 @media(max-width:1200px){
  .hero-layout{grid-template-columns:minmax(0,1fr) minmax(335px,.82fr)}
  .hero h1{font-size:clamp(60px,7vw,95px)}
@@ -343,6 +344,7 @@ footer{background:#0e1813;color:#98ada0;padding:24px 0}
 <footer><div class="wrap foot-inner"><span>© 2026 Артём Хангильдин · Личная профессиональная практика</span><a href="#top">Наверх ↑</a></div></footer>
 <script>
 (function(){
+document.documentElement.classList.add('has-js');
 const menu=document.getElementById('menu'),nav=document.getElementById('nav');
 if(menu&&nav){
 function close(){nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Открыть меню');}
