@@ -3,257 +3,358 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#181919">
+<meta name="theme-color" content="#f2f1ec">
+<meta name="description" content="Артём Хангильдин. Коммерческое развитие сетевого бизнеса: маркетинг, топливный трафик, розница, HoReCa, клиентская лояльность и AI-автоматизация. Реальная практика, проверяемые проекты и прямой контакт.">
 <meta name="robots" content="noindex,nofollow">
-<meta name="description" content="Артём Хангильдин. От бизнес-задачи до реального внедрения. Маркетинг сетевого бизнеса, ритейл, HoReCa, программы лояльности, аналитика и AI.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ru_RU">
-<meta property="og:title" content="Артём Хангильдин — коммерческое развитие и внедрение">
-<meta property="og:description" content="Маркетинг, ритейл, HoReCa, CRM и AI. Реальные проекты и управленческая практика.">
-<title>Артём Хангильдин — коммерческое развитие и внедрение</title>
+<meta property="og:title" content="Артём Хангильдин | Коммерция в реальном бизнесе">
+<meta property="og:description" content="Маркетинг. Сетевая розница. Технологии. От задачи до внедрения.">
+<title>Артём Хангильдин — коммерция в реальном бизнесе</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
 <style>
-:root{--black:#191a19;--black2:#212222;--black3:#2b2c29;--cream:#f1ede7;--cream2:#ebe5dc;--white:#f9f5ee;--ink:#262625;--muted:#686660;--gold:#b49a6d;--gold-bright:#d2b57d;--line:#cfc8be;--line-dark:#4d4943;--wrap:1320px}
+:root{--bg:#f2f1ec;--paper:#fdfcf9;--ink:#151d1b;--deep:#112421;--deep2:#1a312b;--muted:#64716b;--rule:#d2d5ce;--rule-d:#465750;--accent:#db6245;--accent-soft:#ffd5c6;--white:#f6f7f3;--max:1400px;--side:clamp(22px,5vw,94px)}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:86px}
-body{margin:0;color:var(--ink);background:var(--cream);font-family:Manrope,Arial,sans-serif;font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
-a{text-decoration:none;color:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:78px}
+body{margin:0;font-family:Manrope,-apple-system,BlinkMacSystemFont,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:15px;line-height:1.68;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
 button{font:inherit}
-a:focus-visible,button:focus-visible{outline:2px solid var(--gold-bright);outline-offset:4px}
 h1,h2,h3,p{margin:0}
-h1,h2,h3{font-weight:500}
-.serif{font-family:"Cormorant Garamond",Georgia,serif}
-.wrap{width:min(var(--wrap),calc(100% - 112px));margin-inline:auto}
-.skip{position:absolute;left:15px;top:-90px;background:var(--gold-bright);color:var(--ink);z-index:80;padding:12px 16px}.skip:focus{top:10px}
-.eyebrow{display:flex;align-items:center;gap:14px;font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
-.eyebrow:before{content:"";width:35px;height:1px;background:currentColor;opacity:.9}
-.eyebrow.dark{color:#6f5b3b}.eyebrow.light{color:var(--gold-bright)}
-.section-title{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(45px,4.65vw,68px);line-height:.94;letter-spacing:-.045em;margin-top:12px;font-weight:500}
-.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:34px}
-.section-heading .note{font-size:13px;line-height:1.7;max-width:480px;color:#716c65}
-.arrowtext{font-weight:750;font-size:12px;color:#77613c;white-space:nowrap;border-bottom:1px solid #b29c76;padding-bottom:6px}
-.arrowtext:hover{color:#30251a}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:34px;padding:16px 25px;min-height:56px;border:1px solid var(--gold);border-radius:8px;font-size:13px;font-weight:700;transition:background .22s,transform .22s}
-.btn:hover{transform:translateY(-2px)}
-.btn.gold{color:#fff8e8;background:linear-gradient(130deg,#b99b64,#8e713e);border-color:#a78c5d;box-shadow:0 10px 32px #00000024}
-.btn.gold:hover{background:linear-gradient(130deg,#cfb17a,#a78952)}
-.btn.outline{color:#f4f0e8;background:#19191954;border-color:#c3bdb3}
-.btn.outline:hover{background:#ffffff13}
-.btn.dark{background:var(--black);color:var(--white);border-color:var(--black)}
-.btn.dark:hover{background:#37312a}
-.tiny{font-size:10px;line-height:1.5;letter-spacing:.09em;font-weight:750;text-transform:uppercase}
-.icon{width:26px;height:26px;flex:none;stroke:currentColor;fill:none;stroke-width:1.45;stroke-linecap:round;stroke-linejoin:round}
-/* Header */
-.site-header{position:sticky;top:0;z-index:50;background:#191a19f5;border-bottom:1px solid #43423e;backdrop-filter:blur(18px);color:var(--white)}
-.header-row{min-height:75px;display:flex;align-items:center;gap:35px}
-.nameplate{display:flex;align-items:center;gap:25px;white-space:nowrap}
-.nameplate strong{font:500 29px/1 "Cormorant Garamond",Georgia,serif;letter-spacing:-.03em}
-.nameplate small{padding-left:21px;border-left:1px solid #57534b;letter-spacing:.16em;font-size:9px;color:#b6b0a5;font-weight:650}
-.nav{display:flex;margin-left:auto;align-items:center;gap:27px;font-size:11px;color:#d2d0c8}
-.nav a:hover{color:var(--gold-bright)}
-.top-cta{display:inline-flex;align-items:center;gap:8px;padding:10px 17px;border:1px solid var(--gold);border-radius:7px;white-space:nowrap;font-size:11px;font-weight:750;color:#dfc995;transition:background .2s}
-.top-cta:hover{background:#b49a6d24}
-.mobile-menu{display:none;background:none;border:1px solid #796d56;border-radius:5px;color:var(--white);padding:6px 10px;font-size:21px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}
+::selection{background:var(--accent);color:#fff}
+.wrap{width:min(var(--max),100%);margin-inline:auto;padding-inline:var(--side)}
+.skip{position:absolute;top:-90px;left:16px;background:var(--accent);color:white;padding:12px;z-index:70}.skip:focus{top:12px}
+.micro{font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;line-height:1.4}
+.display{font-weight:700;letter-spacing:-.075em;line-height:1.02}
+.serif{font-family:Prata,Georgia,serif;font-weight:400;letter-spacing:-.075em}
+.arrow{font-weight:600;font-size:22px}
+.inline-link{display:inline-flex;align-items:center;gap:24px;font-weight:750;font-size:12px;border-bottom:1px solid currentColor;padding-bottom:9px;transition:gap .25s,color .2s}
+.inline-link:hover{gap:32px;color:var(--accent)}
+.action{border:1px solid var(--ink);background:var(--ink);color:white;min-height:58px;padding:16px 22px;display:inline-flex;align-items:center;justify-content:space-between;gap:42px;font-size:13px;font-weight:800;transition:background .2s,color .2s,transform .2s}
+.action:hover{background:var(--accent);border-color:var(--accent);transform:translateY(-2px)}
+.action.outline{background:transparent;color:var(--ink)}.action.outline:hover{background:var(--ink);color:white}
+.label{display:inline-flex;align-items:center;gap:12px}.label:before{content:"";width:23px;height:2px;background:var(--accent)}
+.num{font-variant-numeric:tabular-nums}
+/* Nav */
+.site-head{z-index:40;position:sticky;top:0;height:76px;background:rgba(242,241,236,.97);border-bottom:1px solid var(--ink);backdrop-filter:blur(14px)}
+.head-inner{height:100%;display:flex;align-items:center;gap:28px}
+.identity{font-size:16px;font-weight:800;white-space:nowrap;letter-spacing:-.035em;line-height:1.1}
+.identity span{display:block;font-size:9px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+.nav{margin-left:auto;display:flex;align-items:center;gap:clamp(13px,2.5vw,38px)}
+.nav a{font-size:11px;font-weight:750;color:#303b35;transition:color .2s}.nav a:hover{color:var(--accent)}
+.header-contact{display:inline-flex;align-items:center;gap:22px;font-size:11px;font-weight:800;padding:12px 16px;border:1px solid var(--ink);white-space:nowrap;transition:background .2s,color .2s}
+.header-contact:hover{background:var(--ink);color:white}
+.menu-toggle{display:none;border:1px solid var(--ink);background:none;width:43px;height:43px;font-size:21px;cursor:pointer}
 /* Hero */
-.hero{background:#191a19;color:var(--white);position:relative;overflow:hidden}
-.hero::after{content:"";pointer-events:none;position:absolute;inset:0;opacity:.24;background-image:repeating-linear-gradient(0deg,transparent 0 3px,#ffffff04 3px 4px)}
-.hero-inner{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1.12fr) minmax(350px,.88fr);align-items:center;min-height:555px}
-.hero-copy{padding:62px 0 72px;z-index:2}
-.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(72px,7.1vw,112px);line-height:.82;letter-spacing:-.043em;margin:31px 0 26px;max-width:770px}
-.hero h1 em{font-style:normal;color:var(--gold-bright)}
-.hero .lead{font-size:17px;line-height:1.5;color:#e8e2d9;max-width:630px}
-.hero-actions{display:flex;gap:13px;align-items:center;flex-wrap:wrap;margin-top:32px}
-.hero-visual{align-self:stretch;position:relative;min-height:520px;margin-right:calc((100vw - min(100vw, var(--wrap)))/-2)}
-.hero-visual svg{position:absolute;inset:0;width:100%;height:100%;display:block}
-.hero-visual::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(90deg,#191a19 0%,#191a19dd 9%,transparent 55%),linear-gradient(0deg,#191a197c,transparent 40%);}
-/* Credentials */
-.credentials{background:#222320;color:#f4f0e6;border-top:1px solid #494841;border-bottom:1px solid #59554e}
-.credentials-grid{display:grid;grid-template-columns:1.22fr 1.28fr .74fr .94fr .78fr;padding:27px 0}
-.credentials .item{display:flex;align-items:center;gap:16px;padding:0 23px;border-right:1px solid #595952;min-width:0}
-.credentials .item:first-child{padding-left:0}
-.credentials .item:last-child{border-right:0;padding-right:0}
-.credentials .icon{color:var(--gold-bright);width:25px;height:25px}
-.credentials .item p{font-size:12px;line-height:1.5;font-weight:580}
-/* Services */
-.services{background:var(--cream);padding:60px 0 61px}
-.service-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.service-card{min-height:320px;border-radius:12px;background:#262623;position:relative;overflow:hidden;isolation:isolate;border:1px solid #5c584e;color:var(--white);display:flex;flex-direction:column;justify-content:flex-end;padding:32px 30px;transition:transform .25s,border-color .25s}
-.service-card:hover{transform:translateY(-5px);border-color:var(--gold)}
-.service-card .service-art{position:absolute;inset:0;width:100%;height:100%;z-index:-2}
-.service-card:after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,#0c0d0de8 0%,#15161596 53%,#14161620 100%)}
-.service-card .icon{color:var(--gold-bright);width:30px;height:30px;margin-bottom:24px}
-.service-card h3{font:500 40px/.95 "Cormorant Garamond",Georgia,serif;letter-spacing:-.03em;max-width:310px}
-.service-card p{margin-top:13px;max-width:300px;font-size:12px;color:#e5e0d5;line-height:1.7}
-.service-card .more{width:34px;height:34px;border:1px solid #b7a17a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-top:17px;color:#e8d0a1}
-.service-card .more svg{width:18px;height:18px}
-.service-card .srlabel{position:absolute;bottom:27px;right:28px;color:#c7bda9;font-size:10px;letter-spacing:.08em}
-/* Evidence */
-.cases{background:#f5f1eb;padding:61px 0 70px}
-.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px}
-.case{position:relative;isolation:isolate;min-height:234px;overflow:hidden;border:1px solid #d8cfc3;border-radius:11px;background:#e7dfd6;padding:23px 22px 18px;display:flex;flex-direction:column}
-.case .case-art{position:absolute;inset:0;width:100%;height:100%;z-index:-1}
-.case::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,#ebe5dd 0%,#ebe5dded 40%,#ebe5dd3b 84%)}
-.case h3{font:600 30px/.99 "Cormorant Garamond",Georgia,serif;letter-spacing:-.03em;max-width:220px}
-.case p{font-size:11px;line-height:1.65;color:#453f38;margin-top:12px;max-width:210px}
-.case-link{margin-top:auto;align-self:flex-start;padding-top:13px;font-size:11px;font-weight:750;border-bottom:1px solid #987c52;color:#5d4a32}
-.case-link:hover{color:#201c16}
-.cases .source-note{margin-top:15px;color:#786e60;font-size:11px;line-height:1.7}
-.spectr{margin-top:17px;border-radius:11px;border:1px solid #c7c0b5;background:#e7e4dc;display:flex;align-items:center;justify-content:space-between;gap:25px;padding:22px 26px}
-.spectr b{font:600 26px/1 "Cormorant Garamond",Georgia,serif}
-.spectr p{font-size:12px;margin-top:4px;color:#555148}
-.spectr a{font-weight:700;font-size:12px;white-space:nowrap;border-bottom:1px solid #8f795d;color:#624f38;padding-bottom:6px}
-/* Process */
-.process{background:linear-gradient(128deg,#242522,#1a1b1a);padding:49px 0 53px;color:var(--white);overflow:hidden}
-.process .section-title{margin-bottom:20px}
-.process-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.process-step{display:flex;align-items:flex-start;gap:19px;padding-top:13px}
-.step-number{display:flex;align-items:center;justify-content:center;flex:none;width:53px;height:53px;border:1px solid #bca375;border-radius:50%;color:#dfc799;font:500 24px/1 "Cormorant Garamond",Georgia,serif}
-.process-step h3{font:500 31px/1 "Cormorant Garamond",Georgia,serif;margin-bottom:5px}
-.process-step p{font-size:12px;color:#c3beb4;max-width:260px;line-height:1.6}
-/* Contact */
-.contact{background:#efe9e0;position:relative;overflow:hidden;padding:54px 0 64px}
-.contact:before{content:"";position:absolute;width:600px;height:450px;right:-210px;bottom:-340px;border-radius:50%;border:65px solid #ded6c99c;transform:rotate(-26deg);pointer-events:none}
-.contact-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;position:relative;z-index:1}
-.contact h2{font:500 clamp(50px,5vw,73px)/.98 "Cormorant Garamond",Georgia,serif;letter-spacing:-.045em;margin-top:13px}
-.contact p{font-size:14px;color:#4e463e;margin-top:9px}
-.contact .btn{justify-self:center;font-size:17px;min-width:270px}
-.footer{padding:23px 0;background:#1b1c1a;color:#b9b4aa;font-size:10px}
-.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center}
-.footer a:hover{color:var(--gold-bright)}
-/* responsive */
-@media(max-width:1250px){.wrap{width:calc(100% - 72px)}.header-row{gap:20px}.nameplate{gap:15px}.nameplate small{padding-left:16px}.nav{gap:18px}.hero h1{font-size:clamp(68px,7.6vw,105px)}.credentials .item{padding:0 15px}.credentials .item p{font-size:11px}.service-card{padding:27px 25px}.service-card h3{font-size:35px}}
-@media(max-width:1020px){.nameplate small{display:none}.nav{gap:16px}.hero-inner{grid-template-columns:1fr .65fr}.hero h1{font-size:clamp(61px,8vw,84px)}.hero-visual{min-height:455px}.credentials-grid{grid-template-columns:repeat(3,1fr);row-gap:20px}.credentials .item:nth-child(3){border-right:0}.credentials .item:nth-child(4){padding-left:0}.service-grid{gap:10px}.service-card{min-height:292px}.service-card h3{font-size:33px}.case{padding:20px 17px}.case h3{font-size:27px}}
-@media(max-width:780px){.wrap{width:calc(100% - 40px)}.header-row{min-height:68px}.nameplate strong{font-size:26px}.mobile-menu{display:block;margin-left:auto}.nav{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;padding:10px 20px 20px;background:#242422;border-bottom:1px solid var(--line-dark)}.nav.open{display:flex}.nav a{padding:13px 0;border-bottom:1px solid #48443d}.top-cta{padding:9px 12px}.hero-inner{display:block;min-height:0}.hero-copy{padding:75px 0 88px;position:relative}.hero-visual{position:absolute;inset:0 -20px 0 31%;min-height:0;opacity:.48;margin:0;z-index:-1}.hero-visual::before{background:linear-gradient(90deg,#191a19,#191a19b0 30%,#191a1933 90%)}.hero h1{font-size:clamp(65px,11vw,95px);max-width:640px}.hero .lead{max-width:540px}.credentials-grid{grid-template-columns:repeat(2,1fr);gap:0}.credentials .item{border-right:0;border-bottom:1px solid #555149;padding:13px 10px}.credentials .item:nth-child(even){border-left:1px solid #555149}.credentials .item:nth-child(odd){padding-left:0}.credentials .item:last-child{border-bottom:0}.service-grid{grid-template-columns:1fr}.service-card{min-height:310px}.service-card h3{font-size:42px}.case-grid{grid-template-columns:1fr}.case{min-height:224px;padding:22px 24px}.case h3{font-size:32px}.case p{font-size:12px}.process-grid{grid-template-columns:1fr;gap:6px}.contact-grid{grid-template-columns:1fr}.contact .btn{justify-self:start}.spectr{align-items:start;flex-direction:column}.section-heading{align-items:start;flex-direction:column;gap:8px}}
-@media(max-width:450px){.nameplate strong{font-size:23px}.top-cta{font-size:10px;padding:8px 9px}.hero h1{font-size:clamp(58px,15vw,78px)}.hero-copy{padding:67px 0 72px}.hero .lead{font-size:15px}.hero-actions{align-items:stretch}.hero-actions .btn{width:100%}.hero-actions .btn.outline{margin-top:0}.credentials-grid{grid-template-columns:1fr}.credentials .item,.credentials .item:nth-child(even),.credentials .item:nth-child(odd){padding:12px 0;border:0;border-bottom:1px solid #555149}.credentials .item:last-child{border-bottom:0}.credentials .icon{width:21px;height:21px}.services,.cases{padding:48px 0}.section-title{font-size:49px}.service-card{min-height:270px}.service-card h3{font-size:39px}.contact{padding:46px 0 60px}.contact h2{font-size:52px}.contact .btn{width:100%}.footer-row{display:block}.footer-row a{display:block;margin-top:8px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+.hero{background:var(--bg);border-bottom:1px solid var(--ink);overflow:hidden}
+.hero-layout{display:grid;grid-template-columns:minmax(0,1.13fr) minmax(365px,.87fr);min-height:645px}
+.hero-copy{padding-top:clamp(65px,7vw,120px);padding-bottom:80px;padding-right:40px;position:relative;z-index:2}
+.hero .eyebrow{color:#58655d;margin-bottom:33px}
+.hero h1{font-size:clamp(65px,6.8vw,118px);font-weight:800;letter-spacing:-.092em;line-height:.99;max-width:790px}
+.hero h1 em{color:var(--accent);font-style:normal}
+.hero .sub{max-width:550px;font-size:17px;line-height:1.65;margin-top:31px;color:#35443a}
+.hero .sub strong{color:var(--ink)}
+.hero-actions{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-top:38px}
+.hero-art{position:relative;overflow:hidden;background:var(--deep);border-left:1px solid #3f554c;color:var(--white);isolation:isolate;min-height:600px}
+.hero-art:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 48% 45%,#36544a9e,transparent 55%),linear-gradient(137deg,#19382e,#071614);z-index:-1}
+.art-top{position:absolute;top:36px;left:36px;right:36px;display:flex;justify-content:space-between;align-items:start;gap:15px}
+.art-top .micro{color:#c4d4c6}.art-top .art-mark{width:11px;height:11px;background:var(--accent);border-radius:50%;box-shadow:0 0 0 7px #db62452a}
+.network-svg{position:absolute;width:125%;height:85%;left:-11%;top:10%;opacity:.92}
+.network-svg .road{stroke:#638578;stroke-width:1;fill:none;stroke-dasharray:5 9;opacity:.6}
+.network-svg .artery{stroke:#b4c6b9;stroke-width:1.4;fill:none;opacity:.35}
+.network-svg .point{stroke:#9db4a7;stroke-width:1.1;fill:var(--deep)}
+.network-svg .hot{fill:var(--accent);stroke:#ffd4c5;stroke-width:1.5}
+.network-svg .glow{fill:var(--accent);opacity:.22;transform-origin:center;animation:pulse 3.8s ease-in-out infinite}
+.network-svg .hot2{animation-delay:1.4s}
+@keyframes pulse{50%{opacity:.55;transform:scale(1.45)}}
+.art-bottom{position:absolute;bottom:43px;left:38px;right:38px;display:flex;justify-content:space-between;gap:20px;align-items:end;border-top:1px solid #82958758;padding-top:20px}
+.art-stat{font-size:clamp(76px,8.5vw,140px);font-weight:800;letter-spacing:-.11em;line-height:.82;color:#f3f6f0}
+.art-stat span{color:var(--accent)}
+.art-text{text-align:right;color:#d5e1d5;font-size:11px;line-height:1.8;max-width:175px}
+.art-text strong{display:block;text-transform:uppercase;letter-spacing:.11em;font-size:10px;color:#f1f2e9}
+.art-flag{position:absolute;left:37px;top:105px;color:#e7f1e8;text-transform:uppercase;font-size:11px;letter-spacing:.18em;writing-mode:vertical-rl;transform:rotate(180deg);opacity:.5}
+.art-caption{position:absolute;right:33px;top:32%;font-size:11px;letter-spacing:.09em;color:#cadacf;border:1px solid #6980758f;background:#132e26bf;padding:10px 13px;backdrop-filter:blur(5px)}
+/* Roles */
+.roles{background:#fbfaf5;border-bottom:1px solid var(--rule)}
+.role-inner{display:grid;grid-template-columns:1fr 1fr 1.05fr}
+.role{padding:28px 35px 30px 0;min-width:0}
+.role:not(:first-child){border-left:1px solid var(--rule);padding-left:33px}
+.role .micro{color:#7a897f}
+.role h3{font-size:20px;line-height:1.3;letter-spacing:-.04em;margin-top:9px;font-weight:780}
+.role p{font-size:12px;color:#59665c;margin-top:6px;line-height:1.65}
+/* What */
+.what{background:var(--deep);color:#f5f7f1;padding:95px 0 105px}
+.block-heading{display:grid;grid-template-columns:240px 1fr;gap:30px;align-items:start;margin-bottom:44px}
+.block-heading .micro{color:var(--accent);padding-top:11px}
+.block-heading h2{font-size:clamp(45px,5.1vw,84px);letter-spacing:-.075em;line-height:1.03;font-weight:770}
+.block-heading h2 em{font-style:normal;color:var(--accent)}
+.work-row{border-top:1px solid #61766a65;display:grid;grid-template-columns:90px minmax(0,1fr) minmax(230px,.65fr) 45px;align-items:center;gap:28px;min-height:179px;padding:27px 0;transition:background .25s}
+.work-row:last-child{border-bottom:1px solid #61766a65}
+.work-row:hover{background:#ffffff04}
+.work-row .number{font-size:12px;letter-spacing:.11em;font-weight:700;color:#b7cebb}
+.work-row h3{font-size:clamp(31px,3.1vw,48px);font-weight:730;letter-spacing:-.065em;line-height:1.12}
+.work-row p{font-size:13px;color:#c4d2c8;max-width:385px;line-height:1.75}
+.work-row a{display:flex;align-items:center;justify-content:center;border:1px solid #a4b4a4;color:var(--accent);border-radius:50%;width:42px;height:42px;font-size:23px;transition:background .2s,color .2s}
+.work-row a:hover{background:var(--accent);color:var(--deep)}
+/* Editorial proof */
+.proof{background:var(--bg);padding:95px 0 110px}
+.proof-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:41px}
+.proof-head .micro{color:#8c5747}
+.proof-head h2{font-size:clamp(46px,5vw,78px);font-weight:800;letter-spacing:-.075em;line-height:1.02;margin-top:13px}
+.proof-head .explain{max-width:335px;color:#647069;font-size:13px;line-height:1.75}
+.case-feature{display:grid;grid-template-columns:1fr 1fr;background:var(--paper);border:1px solid #c9cec7;min-height:475px;overflow:hidden}
+.case-visual{position:relative;background:#cdd5ca;overflow:hidden;isolation:isolate}
+.case-visual svg{position:absolute;inset:0;width:100%;height:100%}
+.case-visual .visual-tag{position:absolute;z-index:2;bottom:29px;left:30px;color:#d8e5d8;background:#122c23;padding:11px 14px;font-size:10px;font-weight:750;letter-spacing:.13em;text-transform:uppercase}
+.feature-copy{padding:clamp(35px,4vw,65px);display:flex;flex-direction:column;justify-content:space-between}
+.feature-copy .micro{color:#b05339}
+.feature-copy h3{font-size:clamp(44px,4.1vw,66px);font-weight:770;letter-spacing:-.082em;line-height:1.02;margin:27px 0 19px}
+.feature-copy p{color:#425047;font-size:15px;line-height:1.85;max-width:500px}
+.case-mechanics{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin:24px 0}
+.case-mechanics span{border:1px solid #c9cec5;padding:8px 11px;font-size:11px;font-weight:750;background:#f1f2ec}
+.case-mechanics b{font-size:13px;color:var(--accent)}
+.case-source{margin-top:20px}
+.case-bottom{display:grid;grid-template-columns:1fr 1fr 1fr;gap:13px;margin-top:14px}
+.mini-case{min-height:310px;position:relative;background:#fdfcf8;border:1px solid #ced2ca;padding:28px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;transition:border-color .2s,transform .2s}
+.mini-case:hover{border-color:#9ba99b;transform:translateY(-3px)}
+.mini-case:before{content:"";position:absolute;right:-50px;top:-70px;width:220px;height:220px;border:1px solid #b0b9b0;border-radius:50%;box-shadow:0 0 0 28px #cad0c629,0 0 0 57px #cad0c617;pointer-events:none}
+.mini-case:nth-child(2):before{border-radius:0;transform:rotate(-35deg);right:-75px;top:-25px}
+.mini-case:nth-child(3):before{border-color:#d5c2b9;box-shadow:0 0 0 28px #dbb9a920,0 0 0 57px #dbb9a910}
+.mini-case .micro{color:#b6533e}
+.mini-case h3{position:relative;z-index:1;font-size:clamp(27px,2.6vw,37px);letter-spacing:-.06em;line-height:1.12;margin:25px 0 10px}
+.mini-case p{position:relative;z-index:1;font-size:13px;color:#526058;line-height:1.75;max-width:350px}
+.mini-case .bottom{padding-top:23px;font-size:12px;font-weight:800;color:#33473b}
+.mini-case .bottom a{border-bottom:1px solid #748a79;padding-bottom:5px}.mini-case .bottom a:hover{color:var(--accent)}
+.truth{margin-top:20px;display:flex;align-items:flex-start;gap:10px;color:#6d7770;font-size:12px;line-height:1.7;max-width:1100px}
+.truth strong{color:#3d5545}
+/* Method */
+.method{background:#e5e8df;padding:94px 0}
+.method-layout{display:grid;grid-template-columns:.78fr 1.22fr;gap:clamp(35px,6vw,105px)}
+.method h2{font-size:clamp(43px,4.9vw,79px);line-height:1.04;letter-spacing:-.077em;font-weight:770;margin-top:14px}
+.method h2 em{font-style:normal;color:var(--accent)}
+.method .intro{color:#536258;margin-top:23px;max-width:460px;font-size:14px}
+.method-list{border-top:1px solid #a7b2a8}
+.method-item{display:grid;grid-template-columns:65px 1fr;gap:20px;padding:27px 0;border-bottom:1px solid #a7b2a8}
+.method-item .micro{color:#a64c35;padding-top:4px}
+.method-item h3{font-size:24px;letter-spacing:-.05em;font-weight:760}
+.method-item p{margin-top:8px;color:#526057;font-size:13px}
+/* CTA */
+.cta{background:var(--accent);color:#fff;padding:83px 0 89px}
+.cta-inner{display:grid;grid-template-columns:1fr auto;align-items:end;gap:35px}
+.cta .micro{color:#ffe1d9}
+.cta h2{font-size:clamp(46px,6vw,96px);font-weight:800;letter-spacing:-.08em;line-height:1.05;margin-top:17px}
+.cta p{font-size:14px;color:#fff2eb;margin-top:16px;max-width:600px}
+.cta .action{background:#111d18;border-color:#111d18;white-space:nowrap;min-width:240px}
+.cta .action:hover{background:#fff;color:#111d18;border-color:#fff}
+/* Footer */
+footer{background:#0e1813;color:#98ada0;padding:24px 0}
+.foot-inner{display:flex;justify-content:space-between;align-items:center;gap:24px;font-size:11px}
+.foot-inner a:hover{color:#fff}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.shown{opacity:1;transform:none}
+@media(max-width:1200px){
+ .hero-layout{grid-template-columns:minmax(0,1fr) minmax(335px,.82fr)}
+ .hero h1{font-size:clamp(60px,7vw,95px)}
+ .role{padding-right:18px}.role:not(:first-child){padding-left:20px}
+ .work-row{grid-template-columns:55px minmax(0,1fr) minmax(215px,.6fr) 42px}
+}
+@media(max-width:980px){
+ .hero-layout{grid-template-columns:1fr}.hero-copy{padding:72px 0 48px}.hero-art{min-height:360px;border-left:0;border-top:1px solid #4c6258}.hero h1{font-size:clamp(66px,9vw,105px)}.art-bottom{bottom:24px}.art-stat{font-size:100px}
+ .block-heading{grid-template-columns:150px 1fr}
+ .work-row{grid-template-columns:45px 1fr 40px;gap:18px}.work-row p{grid-column:2;grid-row:2;max-width:620px}.work-row a{grid-column:3;grid-row:1}
+ .case-feature{grid-template-columns:.87fr 1.13fr}.feature-copy{padding:35px}
+ .case-bottom{grid-template-columns:1fr 1fr}.mini-case:last-child{grid-column:1/-1;min-height:240px}
+ .method-layout{grid-template-columns:1fr 1fr}
+}
+@media(max-width:720px){
+ .site-head{height:67px}.head-inner{gap:13px}
+ .identity{font-size:13px}.identity span{font-size:8px}
+ .menu-toggle{display:block;margin-left:auto}
+ .nav{display:none;position:absolute;top:67px;left:0;right:0;background:var(--bg);padding:14px var(--side) 25px;flex-direction:column;align-items:stretch;gap:0;border-bottom:1px solid var(--ink)}.nav.open{display:flex}.nav a{padding:12px 0;border-bottom:1px solid var(--rule);font-size:13px}
+ .header-contact{padding:9px 12px;gap:8px}.header-contact .long{display:none}
+ .hero-copy{padding:61px 0 56px}.hero h1{font-size:clamp(52px,10.2vw,76px)}.hero .sub{font-size:16px}.hero-art{min-height:315px}.art-stat{font-size:92px}.art-bottom{left:25px;right:25px}.art-top{left:25px;right:25px}.art-caption{right:22px}
+ .role-inner{grid-template-columns:1fr}.role,.role:not(:first-child){padding:18px 0;border:0;border-bottom:1px solid var(--rule)}.role:last-child{border-bottom:0}.role h3{font-size:18px}
+ .what,.proof,.method{padding:66px 0}.block-heading{grid-template-columns:1fr;gap:12px}.block-heading h2{font-size:clamp(41px,8vw,59px)}.block-heading .micro{padding:0}
+ .work-row{min-height:125px;grid-template-columns:35px 1fr 34px;gap:11px;padding:22px 0}.work-row h3{font-size:clamp(25px,6vw,37px)}.work-row p{font-size:12px}.work-row a{height:34px;width:34px;font-size:18px}
+ .proof-head{display:block}.proof-head .explain{margin-top:16px}.proof-head h2{font-size:clamp(40px,8vw,64px)}
+ .case-feature{grid-template-columns:1fr}.case-visual{min-height:290px}.feature-copy{padding:30px}.feature-copy h3{font-size:48px}.case-bottom{grid-template-columns:1fr}.mini-case,.mini-case:last-child{grid-column:auto;min-height:225px}
+ .method-layout{grid-template-columns:1fr;gap:35px}.method h2{font-size:55px}.method-item{padding:22px 0}
+ .cta-inner{grid-template-columns:1fr}.cta h2{font-size:clamp(43px,10vw,70px)}.cta .action{justify-self:start}
+ .foot-inner{flex-wrap:wrap}
+}
+@media(max-width:420px){
+ .identity{font-size:11.5px}.header-contact{font-size:10px;padding:9px 10px}.menu-toggle{width:39px;height:39px}
+ .hero h1{font-size:clamp(48px,11.5vw,57px)}.hero-actions{flex-direction:column;align-items:stretch;gap:14px}.hero-actions .action{width:100%}.hero .sub{font-size:15px}
+ .art-stat{font-size:74px}.art-text{font-size:10px}.art-caption{top:39%}
+ .block-heading h2{font-size:42px}.method h2{font-size:45px}.feature-copy h3{font-size:43px}
+ .case-visual{min-height:220px}.case-mechanics span{font-size:10px}
+ .cta .action{width:100%}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
 </style>
 </head>
 <body>
-<a class="skip" href="#content">Перейти к содержимому</a>
-<header class="site-header"><div class="wrap header-row">
- <a class="nameplate" href="#top" aria-label="Главная"><strong>Артём Хангильдин</strong><small>Бизнес · Маркетинг · Ритейл · AI</small></a>
- <nav class="nav" id="navigation" aria-label="Навигация">
-  <a href="#services">Направления</a><a href="#cases">Опыт и кейсы</a><a href="#approach">Подход</a><a href="#contact">Связаться</a>
+<a class="skip" href="#content">К содержимому</a>
+<header class="site-head"><div class="wrap head-inner">
+ <a class="identity" href="#top">Артём Хангильдин<span>Коммерческое развитие</span></a>
+ <nav class="nav" id="nav" aria-label="Разделы сайта">
+  <a href="#work">Что делаю</a><a href="#proof">Практика</a><a href="#method">Подход</a>
  </nav>
- <a class="top-cta" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer">↗ Telegram</a>
- <button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню" aria-controls="navigation" aria-expanded="false" type="button">☰</button>
+ <button type="button" class="menu-toggle" id="menu" aria-controls="nav" aria-expanded="false" aria-label="Открыть меню">☰</button>
+ <a class="header-contact" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer"><span class="long">Написать лично</span><span aria-hidden="true">↗</span></a>
 </div></header>
 <main id="content">
-<section class="hero" id="top">
- <div class="wrap hero-inner">
-  <div class="hero-copy">
-   <div class="eyebrow light">Коммерческое развитие сетевого бизнеса</div>
-   <h1>От бизнес-задачи<br>до реального<br><em>внедрения.</em></h1>
-   <p class="lead">Маркетинг, ритейл, HoReCa, CRM, аналитика и AI. <span>Работаю с коммерческими задачами от стратегии до организации реализации.</span></p>
-   <div class="hero-actions">
-    <a class="btn gold" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer">Обсудить задачу <span aria-hidden="true">↗</span></a>
-    <a class="btn outline" href="#cases">Опыт и кейсы</a>
+ <section class="hero" id="top" aria-labelledby="h1">
+  <div class="wrap hero-layout">
+   <div class="hero-copy">
+    <div class="eyebrow micro label">Маркетинг / Коммерция / Технологии</div>
+    <h1 id="h1">Идеи <em>не</em><br>продают.<br>Решения<br>работают.</h1>
+    <p class="sub"><strong>Помогаю бизнесу превращать коммерческие задачи в реальные проекты.</strong> Маркетинг, трафик, розница, HoReCa, CRM и AI. От стратегии до организации внедрения.</p>
+    <div class="hero-actions">
+     <a class="action" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer">Обсудить задачу <span class="arrow" aria-hidden="true">↗</span></a>
+     <a class="inline-link" href="#proof">Посмотреть практику <span class="arrow" aria-hidden="true">↘</span></a>
+    </div>
+   </div>
+   <div class="hero-art" aria-label="Визуализация сетевого бизнеса и масштаба практики">
+    <div class="art-top"><span class="micro">Сетевая розница / Операционная среда</span><span class="art-mark" aria-hidden="true"></span></div>
+    <div class="art-flag" aria-hidden="true">Трафик · Маркет · CRM · Автоматизация</div>
+    <svg class="network-svg" viewBox="0 0 560 540" role="img" aria-label="Абстрактная схема связанных объектов распределённой сети">
+      <path class="road" d="M-30 100 75 190 130 125 228 200 320 152 410 238 590 142"/>
+      <path class="road" d="M10 395 100 310 204 388 310 292 398 368 562 288"/>
+      <path class="road" d="M100 310 75 190M204 388 228 200M310 292 320 152M398 368 410 238M130 125 100 310"/>
+      <path class="artery" d="M-30 240Q105 215 160 310T335 315Q435 275 590 400M18 45Q191 85 239 37T574 70"/>
+      <g>
+       <circle class="point" cx="75" cy="190" r="6"/><circle class="point" cx="130" cy="125" r="4"/><circle class="point" cx="228" cy="200" r="8"/><circle class="point" cx="320" cy="152" r="6"/><circle class="point" cx="410" cy="238" r="8"/><circle class="point" cx="100" cy="310" r="8"/><circle class="point" cx="204" cy="388" r="5"/><circle class="point" cx="310" cy="292" r="7"/><circle class="point" cx="398" cy="368" r="5"/>
+       <circle class="glow" cx="228" cy="200" r="27"/><circle class="glow hot2" cx="310" cy="292" r="20"/>
+       <circle class="hot" cx="228" cy="200" r="7"/><circle class="hot" cx="310" cy="292" r="6"/><circle class="hot" cx="410" cy="238" r="4"/>
+      </g>
+      <g fill="#b6cdbd" opacity=".77" font-family="Arial,sans-serif" font-size="10" letter-spacing="2"><text x="236" y="183">МАРКЕТ</text><text x="324" y="284">CRM</text><text x="417" y="224">AI</text><text x="86" y="174">ТРАФИК</text></g>
+    </svg>
+    <div class="art-caption micro">Реальные объекты. Разные задачи. Единые решения.</div>
+    <div class="art-bottom"><div class="art-stat num">100<span>+</span></div><div class="art-text"><strong>АЗС в сети ИРБИС</strong>Масштаб компании, в которой работаю. Не персональный результат.</div></div>
    </div>
   </div>
-  <div class="hero-visual" aria-hidden="true">
-    <svg viewBox="0 0 670 610" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" role="presentation">
-     <defs>
-       <linearGradient id="wall" x1="0" x2="1" y1="0" y2=".8"><stop stop-color="#3d3c39"/><stop offset=".45" stop-color="#a8a39a"/><stop offset="1" stop-color="#575952"/></linearGradient>
-       <linearGradient id="arch" x1="0" x2="1" y1="0" y2=".2"><stop stop-color="#dbd5c8"/><stop offset=".55" stop-color="#a3a29b"/><stop offset="1" stop-color="#4c4f4b"/></linearGradient>
-       <linearGradient id="glass" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#a8adb1"/><stop offset=".65" stop-color="#757c7c"/><stop offset="1" stop-color="#363a38"/></linearGradient>
-       <linearGradient id="fade" x1="0" x2="1"><stop stop-color="#1a1b19"/><stop offset=".25" stop-color="#1a1b19c4"/><stop offset="1" stop-color="#1a1b1900"/></linearGradient>
-       <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".38" numOctaves="2" seed="2" result="noise"/><feColorMatrix type="saturate" values="0"/></filter>
-     </defs>
-     <rect width="670" height="610" fill="#242724"/>
-     <rect x="294" y="68" width="420" height="540" fill="url(#glass)"/>
-     <g fill="#444945" opacity=".7"><path d="M375 385h75v225h-75zM459 329h58v281h-58zM527 410h42v200h-42zM579 360h120v250H579z"/></g>
-     <g stroke="#c5c0b5" opacity=".13" stroke-width="2"><path d="M400 410v200m25-230v230m55-250v250m76-230v230m55-280v280"/></g>
-     <path d="M-50-80H740V75C450-3 225 92 168 328c-27 115-27 197-50 300H-50Z" fill="url(#wall)"/>
-     <path d="M-40 650C54 210 167 28 457 23c162-3 258 24 335 74V-50H-40Z" fill="url(#arch)" opacity=".65"/>
-     <path d="M-40 650C70 154 212-19 475-18" fill="none" stroke="#eee8da" stroke-width="1.5" opacity=".47"/>
-     <path d="M-45 653C76 285 179 66 441 54" fill="none" stroke="#1b1d1b" stroke-width="18" opacity=".5"/>
-     <rect width="670" height="610" filter="url(#grain)" opacity=".08"/>
-     <rect width="670" height="610" fill="url(#fade)"/>
-    </svg>
+ </section>
+ <div class="roles"><div class="wrap role-inner">
+  <div class="role"><div class="micro">ГК «ИРБИС»</div><h3>Директор по маркетингу</h3><p>Топливный маркетинг, трафик, digital, лояльность, торговое предложение, HoReCa и команда.</p></div>
+  <div class="role"><div class="micro">IT-компания «СПЕКТР»</div><h3>Коммерческий директор</h3><p>Цифровые продукты, AI, CRM, автоматизация и развитие коммерческих проектов.</p></div>
+  <div class="role"><div class="micro">Моя специализация</div><h3>Внедрение на масштабе сети</h3><p>Связываю задачи, цифры, продукт, подрядчиков и исполнителей.</p></div>
+ </div></div>
+ <section class="what" id="work">
+  <div class="wrap">
+   <div class="block-heading reveal"><div class="micro">01 / Что можно поручить</div><h2>Не консультировать.<br><em>Решать задачу.</em></h2></div>
+   <div class="work-rows">
+    <div class="work-row reveal">
+     <div class="number micro">01</div>
+     <h3>Привлечение и удержание клиентов</h3>
+     <p>Топливный маркетинг, реклама, SMM, digital, CRM, программа лояльности и работа с клиентской базой.</p>
+     <a href="#case-smart" aria-label="Пример работы по привлечению и удержанию">↗</a>
+    </div>
+    <div class="work-row reveal">
+     <div class="number micro">02</div>
+     <h3>Ритейл, HoReCa и продукты</h3>
+     <p>Магазины при АЗС, ассортимент, СТМ, кафе, маркетинговые акции и коммерческие инициативы.</p>
+     <a href="#case-food" aria-label="Пример работы с ритейлом и продуктами">↗</a>
+    </div>
+    <div class="work-row reveal">
+     <div class="number micro">03</div>
+     <h3>Аналитика, CRM и AI</h3>
+     <p>Коммерческие метрики, управленческая отчётность, автоматизация процессов и технологии команды СПЕКТР.</p>
+     <a href="#case-spectr" aria-label="Пример IT-проекта команды СПЕКТР">↗</a>
+    </div>
+   </div>
   </div>
- </div>
-</section>
-<div class="credentials"><div class="wrap credentials-grid">
- <div class="item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 12h18M12 11v3"/></svg><p>Директор по маркетингу<br>ГК «ИРБИС»</p></div>
- <div class="item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="1"/><path d="M8 7V4h8v3M3 12h18M12 11v3"/></svg><p>Коммерческий директор<br>«СПЕКТР»</p></div>
- <div class="item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 21V5h10v16M3 21h15M7 9h6M7 13h6M7 17h6M15 8l4 3v9m0-7h2v5"/></svg><p>100+ АЗС<br><span style="font-size:10px;color:#bcb6ac">Масштаб сети</span></p></div>
- <div class="item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 4h3l3 12h11l3-9H6M9 21h.01M19 21h.01M7 12h13"/></svg><p>Сетевая<br>розница</p></div>
- <div class="item"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="1"/><path d="M9 9h6v6H9zM9 1v5m6-5v5M9 18v5m6-5v5M1 9h5m-5 6h5m12-6h5m-5 6h5"/></svg><p>AI и CRM</p></div>
-</div></div>
-<section class="services" id="services"><div class="wrap">
- <div class="section-heading"><div><div class="eyebrow dark">Направления работы</div><h2 class="section-title">Решения для роста бизнеса</h2></div></div>
- <div class="service-grid">
-  <a class="service-card" href="#case-taxi" aria-label="Привлечение клиентов, смотреть практику SMART">
-    <svg class="service-art" viewBox="0 0 480 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="s1" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#141514"/><stop offset="1" stop-color="#7b766a"/></linearGradient></defs><rect width="480" height="340" fill="url(#s1)"/><path d="M-20 360C125 265 236 273 320 138S463 7 505-80" stroke="#c0b9a9" stroke-width="75" opacity=".21" fill="none"/><path d="M-20 355C132 285 243 268 332 133S485-13 505-62" stroke="#d4c5ad" stroke-width="1.6" opacity=".5" fill="none"/><path d="M-30 402C155 270 233 280 324 158S494 47 520 7" stroke="#d4c5ad" stroke-width="1.1" opacity=".26" fill="none"/></svg>
-    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20h18M6 17v-6h3v6m3 0V7h3v10m3 0V3h3v14"/></svg>
-    <h3>Привлечение<br>клиентов</h3><p>Топливный маркетинг, реклама, программы лояльности и развитие спроса.</p>
-    <span class="more" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12h14m-6-6 6 6-6 6" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></span>
-  </a>
-  <a class="service-card" href="#case-food" aria-label="Ритейл и HoReCa, смотреть опыт food-направления">
-    <svg class="service-art" viewBox="0 0 480 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="s2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#47453d"/><stop offset="1" stop-color="#151715"/></linearGradient></defs><rect width="480" height="340" fill="url(#s2)"/><path d="m135 76 400-30v34L150 114Z" fill="#b5aa91"/><path d="m150 112 390-35" stroke="#ffe9ab" stroke-width="5" opacity=".9"/><path d="M391 92h18v250h-18z" fill="#807969"/><path d="M161 144h42v179h-42z" fill="#5d5b50"/><path d="M156 143h54v9h-54z" fill="#d2c3a0"/><path d="M190 173h66v172h-66z" fill="#30322f"/><path d="M201 190h43v58h-43z" fill="#b6b8a8" opacity=".28"/><path d="M228 249v76" stroke="#d9cb9c" stroke-width="3"/><path d="M228 269c14-5 17 15 7 29" fill="none" stroke="#d9cb9c" stroke-width="3"/><path d="m0 330 480-26v36H0" fill="#3b3d37"/></svg>
-    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12l-1 4H7L6 3Zm2 4 1 14h6l1-14M7 11h10"/></svg>
-    <h3>Ритейл и HoReCa</h3><p>Магазины при АЗС, кафе, новые продукты, СТМ и коммерческие инициативы.</p>
-    <span class="more" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12h14m-6-6 6 6-6 6" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></span>
-  </a>
-  <a class="service-card" href="#spectr" aria-label="Аналитика и AI, посмотреть направление СПЕКТР">
-    <svg class="service-art" viewBox="0 0 480 340" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="s3" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#3b443b"/><stop offset="1" stop-color="#131811"/></linearGradient></defs><rect width="480" height="340" fill="url(#s3)"/><g fill="none" stroke="#b3b9a3" opacity=".32"><path d="M395-80 219 420" stroke-width="40"/><path d="M460-80 284 420" stroke-width="25"/><path d="M505-80 336 420" stroke-width="16"/><path d="M555-80 397 420" stroke-width="8"/></g></svg>
-    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 9 5-9 5-9-5 9-5Zm-9 10 9 5 9-5M3 17l9 5 9-5"/></svg>
-    <h3>Аналитика и AI</h3><p>Данные, CRM, автоматизация процессов и управленческие решения.</p>
-    <span class="more" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12h14m-6-6 6 6-6 6" stroke="currentColor" fill="none" stroke-width="1.5"/></svg></span>
-  </a>
- </div>
-</div></section>
-<section class="cases" id="cases"><div class="wrap">
- <div class="section-heading"><div><div class="eyebrow dark">Практический опыт</div><h2 class="section-title">Кейсы из реальной работы</h2></div><span class="arrowtext">Проверяемые примеры ↓</span></div>
- <div class="case-grid">
-   <article class="case" id="case-taxi">
-     <svg class="case-art" viewBox="0 0 440 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="taxig" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d7cbb9"/><stop offset="1" stop-color="#64584a"/></linearGradient></defs><rect width="440" height="240" fill="url(#taxig)"/><ellipse cx="363" cy="239" rx="190" ry="69" fill="#252624"/><path d="M280 150c14-13 26-21 34-21h104c10 0 21 6 27 21l9 43H273Z" fill="#cab083" stroke="#38322d" stroke-width="4"/><rect x="303" y="137" width="117" height="45" rx="6" fill="#e6cd95" stroke="#4b4438" stroke-width="4"/><text x="362" y="167" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="bold" fill="#342e27">TAXI</text><path d="M0 0h440v240H0" fill="#e2d9ca" opacity=".07"/></svg>
-     <h3>Клуб таксистов<br>SMART</h3><p>Программа лояльности: связь топливных покупок, бонусов в маркете и кофе.</p>
-     <a class="case-link" href="https://smart.azsirbis.ru/offers/811" target="_blank" rel="noopener noreferrer">Условия на сайте ИРБИС ↗</a>
-   </article>
-   <article class="case" id="case-fuel">
-     <svg class="case-art" viewBox="0 0 440 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="fuelg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#cbc8c0"/><stop offset="1" stop-color="#555853"/></linearGradient></defs><rect width="440" height="240" fill="url(#fuelg)"/><path d="M341 5h69v235h-69z" fill="#323b37"/><rect x="348" y="35" width="48" height="68" rx="3" fill="#939b91"/><path d="M370 110q40 34-1 75m-2-67q-23 15-22 41" stroke="#242b28" fill="none" stroke-width="14"/><path d="m317 103-66 45 9 19 68-44" fill="#202623" stroke="#b5b09f" stroke-width="3"/><path d="M276 147h-21l-13 19 18 15 16-11" fill="#414843"/><circle cx="370" cy="205" r="6" fill="#c9b897"/></svg>
-     <h3>Топливный<br>маркетинг</h3><p>Кросс-промо топлива и кофе: пример механики для трафика и дополнительных покупок.</p>
-     <a class="case-link" href="https://smart.azsirbis.ru/offers/889" target="_blank" rel="noopener noreferrer">Условия на сайте ИРБИС ↗</a>
-   </article>
-   <article class="case" id="case-food">
-     <svg class="case-art" viewBox="0 0 440 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><defs><linearGradient id="cofg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e8d5be"/><stop offset="1" stop-color="#715c46"/></linearGradient></defs><rect width="440" height="240" fill="url(#cofg)"/><circle cx="358" cy="65" r="56" fill="#f5deb2" opacity=".47"/><ellipse cx="355" cy="212" rx="85" ry="20" fill="#3d2d20" opacity=".35"/><path d="m318 98 84 0-12 121h-59Z" fill="#987858" stroke="#6d543f" stroke-width="3"/><path d="M312 94h97v19h-97z" rx="6" fill="#242524"/><path d="M326 135h67v6h-67" stroke="#d5bd97" stroke-width="2"/><path d="m359 52-2 33m25-38-9 40m-34-39 8 38" stroke="#f2e3c7" stroke-width="5" opacity=".5"/></svg>
-     <h3>Магазины<br>и food-направление</h3><p>Коммерческая работа с розницей, кафе, продуктами и продвижением на АЗС.</p>
-     <a class="case-link" href="https://smart.azsirbis.ru/offers/921" target="_blank" rel="noopener noreferrer">Пример продукта ИРБИС ↗</a>
-   </article>
- </div>
- <p class="source-note">Примеры представляют практику ИРБИС и участие маркетингового направления. Финансовые результаты компании не выдаются за личные достижения.</p>
- <div class="spectr" id="spectr">
-    <div><b>«СПЕКТР» · CRM и автоматизация</b><p>Коммерческое развитие IT-проектов. Техническая реализация — работа профильной команды «СПЕКТР».</p></div>
-    <a href="https://www.itspectr.tech/cases/selekt" target="_blank" rel="noopener noreferrer">Кейс команды СПЕКТР ↗</a>
- </div>
-</div></section>
-<section class="process" id="approach"><div class="wrap">
- <div class="eyebrow light">Как я работаю</div><h2 class="section-title serif">От анализа до результата</h2>
- <div class="process-grid">
-  <div class="process-step"><div class="step-number">01</div><div><h3>Диагностика</h3><p>Разбор задачи, данных, ограничений и точек роста.</p></div></div>
-  <div class="process-step"><div class="step-number">02</div><div><h3>Пилот</h3><p>Проверка решения на практике с понятными метриками.</p></div></div>
-  <div class="process-step"><div class="step-number">03</div><div><h3>Внедрение</h3><p>Организация исполнения и масштабирование, если эффект подтверждён.</p></div></div>
- </div>
-</div></section>
-<section class="contact" id="contact"><div class="wrap contact-grid">
-  <div><div class="eyebrow dark">Связаться</div><h2>Обсудим вашу задачу?</h2><p>Напишите мне лично в Telegram. Достаточно короткого описания бизнес-задачи.</p></div>
-  <a class="btn gold" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer">@Arthandam <span aria-hidden="true">↗</span></a>
-</div></section>
+ </section>
+ <section class="proof" id="proof">
+  <div class="wrap">
+   <div class="proof-head reveal"><div><div class="micro label">02 / Проверяемая практика</div><h2>Не обещания.<br>Примеры работы.</h2></div><p class="explain">Каждый пример можно проверить по публичному источнику. Показываю реальную механику, а не придуманную прибыль.</p></div>
+   <div class="case-feature reveal" id="case-smart">
+    <div class="case-visual" aria-hidden="true">
+     <svg viewBox="0 0 640 490" preserveAspectRatio="xMidYMid slice">
+      <defs><linearGradient id="vbg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#213d32"/><stop offset="1" stop-color="#14221b"/></linearGradient><linearGradient id="vlight" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fbefcf"/><stop offset="1" stop-color="#d4b88e"/></linearGradient></defs>
+      <rect width="640" height="490" fill="url(#vbg)"/>
+      <path d="M-100 360 150 210 290 294 440 140 730 220" fill="none" stroke="#6d9581" stroke-width="1.3" opacity=".7"/>
+      <path d="M-40 410 150 210 330 335 440 140 670 70" fill="none" stroke="#9cb7a1" stroke-dasharray="4 9" opacity=".45"/>
+      <circle cx="150" cy="210" r="85" fill="none" stroke="#678271" stroke-width="1" opacity=".5"/>
+      <circle cx="150" cy="210" r="130" fill="none" stroke="#678271" stroke-width="1" opacity=".28"/>
+      <g transform="translate(234 98) rotate(-8 155 95)">
+       <rect x="24" y="110" width="330" height="184" rx="33" fill="#101715" stroke="#516c5b" stroke-width="4"/>
+       <path d="M67 152q31-72 99-72h100q69 0 95 74" fill="#233c32" stroke="#c5d8c2" stroke-width="4"/>
+       <rect x="138" y="41" width="135" height="65" rx="9" fill="url(#vlight)" stroke="#5e5748" stroke-width="7"/>
+       <text x="207" y="85" text-anchor="middle" font-size="32" font-family="Arial,sans-serif" font-weight="bold" fill="#17221b">TAXI</text>
+       <ellipse cx="97" cy="286" rx="31" ry="31" fill="#070c09" stroke="#a6b2a6" stroke-width="5"/>
+       <ellipse cx="280" cy="286" rx="31" ry="31" fill="#070c09" stroke="#a6b2a6" stroke-width="5"/>
+       <path d="M26 229h326" stroke="#d97552" stroke-width="8"/>
+      </g>
+      <circle cx="150" cy="210" r="9" fill="#db6245"/><circle cx="150" cy="210" r="22" stroke="#db6245" fill="none" opacity=".5"/>
+      <text x="36" y="55" font-family="Arial" font-size="11" letter-spacing="4" fill="#b7cfbf">SMART / LOYALTY</text>
+     </svg>
+     <span class="visual-tag">Клиентские механики / ИРБИС</span>
+    </div>
+    <div class="feature-copy">
+     <div>
+      <div class="micro">01 / Топливо × Лояльность × Маркет</div>
+      <h3>Клуб таксистов SMART.</h3>
+      <p>Реальная программа для водителей с регулярными заправками. Топливо связано с дополнительными покупками в маркете и предложением кофе. Пример работы маркетинговой функции сети с разными категориями.</p>
+      <div class="case-mechanics"><span>400 л за месяц</span><b>→</b><span>15% бонусами на маркет</span><b>→</b><span>кофе за 1 ₽</span></div>
+     </div>
+     <div class="case-source"><a class="inline-link" href="https://smart.azsirbis.ru/offers/811" target="_blank" rel="noopener noreferrer">Посмотреть официальные условия <span class="arrow" aria-hidden="true">↗</span></a></div>
+    </div>
+   </div>
+   <div class="case-bottom">
+    <article class="mini-case reveal" id="case-fuel">
+     <div class="micro">02 / Топливный маркетинг</div>
+     <div><h3>Топливо + кофе.</h3><p>Кросс-промо: заправка от 25 л и кофе. Бонусная механика для АЗС в Кирове, действовавшая летом 2026 года.</p></div>
+     <div class="bottom"><a href="https://smart.azsirbis.ru/offers/889" target="_blank" rel="noopener noreferrer">Официальные условия ↗</a></div>
+    </article>
+    <article class="mini-case reveal" id="case-food">
+     <div class="micro">03 / Ритейл и HoReCa</div>
+     <div><h3>Шеф Крусон.</h3><p>Пример food-продукта в сети АЗС: круассан с ветчиной и сыром, опубликованный с перечнем точек продаж.</p></div>
+     <div class="bottom"><a href="https://smart.azsirbis.ru/offers/921" target="_blank" rel="noopener noreferrer">Публикация ИРБИС ↗</a></div>
+    </article>
+    <article class="mini-case reveal" id="case-spectr">
+     <div class="micro">04 / Технологии команды СПЕКТР</div>
+     <div><h3>«Селект»: CRM для 15 отделов.</h3><p>Публичный кейс СПЕКТР: сайт-каталог, маркетинг, CRM и автоматизация. Результат команды, не моя персональная заслуга.</p></div>
+     <div class="bottom"><a href="https://www.itspectr.tech/cases/selekt" target="_blank" rel="noopener noreferrer">Кейс СПЕКТР ↗</a></div>
+    </article>
+   </div>
+   <p class="truth"><strong>Принцип доказательности.</strong> Примеры показывают работу компаний и направление моей управленческой практики. Там, где личный финансовый результат не измерен, я его не заявляю. Масштаб сети не означает личное владение объектами.</p>
+  </div>
+ </section>
+ <section class="method" id="method">
+  <div class="wrap method-layout">
+   <div class="reveal"><div class="micro label">03 / Как работаю</div><h2>От задачи<br>до <em>запуска.</em></h2><p class="intro">Рабочая модель подбирается под задачу: от диагностики до пилота и организации внедрения. Важны экономика, исполнители и измеримый критерий успеха.</p></div>
+   <div class="method-list">
+    <div class="method-item reveal"><div class="micro">01</div><div><h3>Разобрать проблему</h3><p>Цель, показатели, ограничения и реальные причины потерь или упущенных возможностей.</p></div></div>
+    <div class="method-item reveal"><div class="micro">02</div><div><h3>Собрать решение</h3><p>Гипотеза, экономика, ресурсы, ответственные и ограниченный пилот.</p></div></div>
+    <div class="method-item reveal"><div class="micro">03</div><div><h3>Организовать внедрение</h3><p>Команда, подрядчики, контроль качества и оценка результата перед масштабированием.</p></div></div>
+   </div>
+  </div>
+ </section>
+ <section class="cta" id="contact">
+  <div class="wrap cta-inner">
+   <div><div class="micro">Личный рабочий контакт</div><h2>Есть задача?<br>Обсудим.</h2><p>Напиши напрямую в Telegram. Без формы, секретаря и красивых обещаний в обмен на бюджет.</p></div>
+   <a class="action" href="https://t.me/Arthandam" target="_blank" rel="noopener noreferrer">Написать @Arthandam <span class="arrow" aria-hidden="true">↗</span></a>
+  </div>
+ </section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><span>© 2026 Артём Хангильдин · Личная профессиональная практика</span><a href="#top">Наверх ↑</a></div></footer>
+<footer><div class="wrap foot-inner"><span>© 2026 Артём Хангильдин · Личная профессиональная практика</span><a href="#top">Наверх ↑</a></div></footer>
 <script>
 (function(){
- const menu=document.getElementById("mobile-menu"),nav=document.getElementById("navigation");
- if(menu&&nav){
-  function close(){nav.classList.remove("open");menu.setAttribute("aria-expanded","false");menu.setAttribute("aria-label","Открыть меню");menu.textContent="☰";}
-  menu.addEventListener("click",()=>{const state=nav.classList.toggle("open");menu.setAttribute("aria-expanded",String(state));menu.setAttribute("aria-label",state?"Закрыть меню":"Открыть меню");menu.textContent=state?"×":"☰";});
-  nav.querySelectorAll("a").forEach(a=>a.addEventListener("click",close));
-  window.addEventListener("keydown",e=>{if(e.key==="Escape")close();});
-  window.addEventListener("resize",()=>{if(window.innerWidth>780)close();});
- }
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+if(menu&&nav){
+function close(){nav.classList.remove('open');menu.textContent='☰';menu.setAttribute('aria-expanded','false');menu.setAttribute('aria-label','Открыть меню');}
+menu.addEventListener('click',function(){const open=nav.classList.toggle('open');menu.textContent=open?'×':'☰';menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Закрыть меню':'Открыть меню');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});
+window.addEventListener('keydown',function(e){if(e.key==='Escape')close();});
+window.addEventListener('resize',function(){if(window.innerWidth>720)close();});
+}
+if('IntersectionObserver' in window&&!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+const observer=new IntersectionObserver(function(entries){entries.forEach(function(entry){if(entry.isIntersecting){entry.target.classList.add('shown');observer.unobserve(entry.target);}});},{threshold:.08});
+document.querySelectorAll('.reveal').forEach(function(el){observer.observe(el);});
+}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('shown');});}
 })();
 </script>
 </body>
